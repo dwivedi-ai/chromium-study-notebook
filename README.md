@@ -29,6 +29,8 @@ tests/            Browser interaction check
 
 The site needs no build step. For GitHub Pages, select the `main` branch and `/ (root)` as the publishing source; `index.html` and all of its assets are already in place.
 
+For Vercel, import this repository with the project Root Directory set to the repository root. `vercel.json` selects the **Other** framework, skips the build, and serves the root directory containing `index.html`. No Python command, server entry point, or application framework is needed. If Vercel reports a missing entry point, check that the project Root Directory is blank (the repository root) in Vercel's Build and Deployment settings, then redeploy.
+
 ## What is included
 
 - Twenty-three self-contained chapters with 208 teaching sections in a deliberate reading order: rewritten explanations, implementation paths, questions, source exercises, notes, a worked end-to-end page load, and a final independent investigation. Detailed material appears directly in the chapters.
